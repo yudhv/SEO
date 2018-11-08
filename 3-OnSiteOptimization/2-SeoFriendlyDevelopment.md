@@ -1,21 +1,28 @@
-## How Google measures UI of a site
-* Engagement Metrics
-    * Google uses Google Analytics data to gauge user-engagement on a website 
-    * So, the way visitors engage with your site will affect your rankings
-    * Ex - If users go back as soon as they arrive from Google, your site will suffer
-* Machine Learning
-    1. The Panda update in 2011
-    2. Google used human evaluators to manually rate thousands of sites, searching for low quality content
-    3. Google then incorporated machine learning to mimic the human evaluators
-    4. The end result was a seismic shift that rearranged over 20% of all results
-    5. More about Panda [here](https://moz.com/blog/beat-google-panda) and [here](https://moz.com/blog/duplicate-content-in-a-post-panda-world)
-* Links
-    * higher quality sites earn more links than their less useful, lower quality peers
+# Crawlable AJAX
+For websites that load dynamic content on the page without refreshing, Google recommends routing `_escaped_fragment_` in your GET query and pointing it to an HTML snapshot. 
 
-## Common traits in Google-certified UX sites
-* Easy to use, navigate, and understand
-*  Provide direct, actionable information relevant to the query
-*  Professionally designed and accessible to modern browsers
-*  Deliver high quality, legitimate, credible content
+The principal idea is that you want to render *HTML* for **GoogleBot** and *JavaScript* for **Visitors**.
 
+* Modify the backend such that if the URL looks like `http://example.com/index.php`
+then an HTML page **WITH** the JS code should be served
 
+* If the URL looks like `http://example.com/index.php?_escaped_fragment_` then the backend should serve a page with the JS already executed (meaning no JS)
+
+* Add `<meta name="fragment" content="*">` to all dynamic pages of the site where a simplified HTML page is served for crawlers
+
+* Verify your special routing by sending both normal and modified GET reqeusts to the server and checking the *View Source* and *View Inspect*. 
+    | GET Type | View Source | View Inspect |
+    |---|---|---|
+    | Normal | Contains JS | Only HTML | 
+    | Modified | Only HTML | Only HTML | 
+
+# Crawlable Pagination 
+Note - Wordpress has several plugins (including Yoast SEO) that handle SEO-friendly pagination for you.
+
+Like Canonical tags, here you mention 
+
+`<link rel="next" href=[target url]/>` for the next page
+
+and 
+
+`<link rel="prev" href=[target url]/>` for the previous page.

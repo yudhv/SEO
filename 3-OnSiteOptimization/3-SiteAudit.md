@@ -1,5 +1,5 @@
-## The Process (chronological order)
-## 1. Crawling, Indexing and Website Structure 
+# The Chronological Process
+## 1. Crawling
 ### Step 0: Browse your website like an SE
 * Use [Browseo](http://browseo.net) to view the site without JS and CSS masking your links
 * Stuff to check for here:
@@ -10,31 +10,30 @@
 ### Step 1: Run Screaming Frog and crawl the site
 * The 500 URL limit can be bypassed by crawling sub-directories in pieces
 * BONUS: Here, you can also filter out the pages with specific HTML in them (ex=> get all pages that open a link in a new tab)
-### Step 2: Save your crawl
-### Step 3: Check page level: Pages buried too deep within the site are neither good for users, nor SEO. 
+### Step 2: Check page level: Pages buried too deep within the site are neither good for users, nor SEO. 
 * After the crawl, sort the pages by "Level" (one of the columns)
 * Now we have a sorted list of pages that need to be linked in the upcoming posts (to reduce the link-level)
 * Export as CSV
-* Note - The CrossLinker plugin for Wordpress helps you to always internally cross-link all posts
-### Step 4: Check for Crawl Errors
+* Note - The [CrossLinker plugin](http://wordpress.org/extend/plugins/cross-linker/) for Wordpress helps you to always internally cross-link all posts
+### Step 3: Check for Crawl Errors
 * Click on "Response Codes" =>  "Client Error 4xx" (drop down)
 * Export as CSV
-### Step 5: Find & Fix Long Titles
+### Step 4: Find & Fix Long Titles
 * Title tags and meta descriptions have a recommended length. It pays to adhere to the same.
 * Click on "Page Titles"=>"Over 70 Characters" (drop down)
 * Export as CSV
 * TIP: Use the "=LEN(E3)" to calculate length of the titles in a new column
-### Step 6: Find & Fix Long Descriptions
+### Step 5: Find & Fix Long Descriptions
 * Click on "Meta Descriptions"=>"Over 156 Characters" (drop down)
 * Export as CSV
-### Step 7: Check Indexation Settings
+### Step 6: Check Indexation Settings
 * Click on "Meta & Canonical"
 * Check for:
     * Missing Canonical Tags (to eliminate duplicates)
     * Incorrect Canonical tags (pointing to a different page)
     * Pages that should be indexed, but have "noindex" meta
     * Pages that shouldn't be indexed, but have "index" meta
-### Step 8: Check and eliminate search URLs and thin pages
+### Step 7: Check and eliminate search URLs and thin pages
 * Thin pages: Pages with very little content on them (mostly used to target KWs)
 * If you have 1000s of thin pages targeting lots of KWs but no content, google considers the domain low quality
 * Only keep the most popular search URLs that have category-style landing page content on them
@@ -78,11 +77,29 @@
 * Find the funnel/path to attract, to draw back, and to close
     * Conversions always happen over multiple visits, never single 
 
+# Site Redesign
+In-order to not lose any traffic in the process of redesigning one's website, one has to have a self-audit to monitor the effects of the redesign. 
+
+Here are the common things to monitor: 
+## 1. Monitor No. of Pages Indexed
+Google `site:sitename.com`
+
+## 2. Monitor Cache Date
+Google `cache:sitename.com`
+
+## 3. Monitor Page Rank
+Use the (SEOquake Toolbar)[http://www.seoquake.com/] to check your page rank. Keep in mind, this is a *loose metric*
+
+## 4. Monitor Domain Authority (DA)
+Use (SEOmoz toolbar)[http://www.seomoz.org/seo-toolbar]. This metric will have a delay. 
+
+## 5. Monitor "Not Found" Errors
+Use Google Search Console to monitor the number of "Not Found" Errors.
 
 ## BONUS - 5 questions to ask for any website
 1. What value does your business create that helps solve searcher's queries?
-2. What is unique about the value you provide? (It can be better than existing, or different than existing, etc)
-3. Who is going to amplify your value and why? (bloggers, social media users, press, etc)
-4. What is your conversion process? (This is where your funnel comes in)
+2. What is unique about the value you provide? (It can be better than existing, or different than existing, etc)?
+3. Who is going to amplify your value and why? (bloggers, social media users, press, etc)?
+4. What is your conversion process? (This is where your funnel comes in)?
 5. How do you expose your value in a way that SEs can crawl, index, understand (contextual), and show off (feature snippets, desc, etc)?
 

@@ -12,12 +12,14 @@
     * This will tell you how well the traffic will convert for this KW
     * Track impressions and conversion rate for at least 200-300 clicks
 4. Determine the exact value of the KW
-    * At this point, you have all the data you need except the potential click-through rate for #1 ranking on the KW's SERP (for which check this)
+    * At this point, you have all the data you need except the potential click-through rate for #1 ranking on the KW's SERP (for which [check this](https://moz.com/blog/mission-imposserpble-establishing-clickthrough-rates))
     * Now, you have the impression, click (paid and organic both), and conversion rates
-    * ex=>Say, your ad generated 5,000 impressions in one day, of which 100 people clicked and came to your site, of which 3 visitors converted. So CTR (click through rate) is 2%. CVR (conversion rate) is 3%.If you made $100 from the 3 conversions and 100 visitors - **your KW value is $1** 
+    * ex=>Say, your ad generated 5,000 impressions in one day, of which 100 people clicked and came to your site, of which 3 visitors converted. So CTR (click through rate) is 2%. CVR (conversion rate) is 3%.If you made $100 from the 3 conversions and 100 visitors - 
+    **your KW value is $1** 
 
 
 ## Long Tail KWs
+![Search Demand](https://raw.githubusercontent.com/yudhv/SEO/master/References/longTailKW.png "MozBeginnersGuide")
 * Popular search terms only account for 30% of all web searches (FatHead+ChunkyMiddle)
 * 70% searches involve long-tail keywords
 * Long Tail also converts better as it captures visitors later in the buying/conversion cycle

@@ -17,10 +17,10 @@ This assumes you have Feedburner (the most popular RSS tool)
     1. **Activate SmartFeed** - helps make your feed compatible with any reader
     2. **Activate FeedFlare** - helps put links at the bottom of your feed (like FB share, email, bookmark). Remember adding "personal" flares as well.
     3. **Activate Pingshot** - helps notify reading services when there's an update
-    4. **Link to the Original Source** - helps get extra backlinks and tells Googlebot that the content came from you first. Follow these steps:
+    4. **Link to the Original Source** - helps get extra backlinks and tells Googlebot that the content came from you first. Follow these steps for Wordpress:
 
         * Go to `Appearance`=>`Editor`=>`functions.php`
-        * Add this function 
+        * Add this code 
         ```
         function embed_rss($content) { 
             if(is_feed( ) ) $content .= "<p><a href=' ". get_permalink( ) ."' >' "; $content .= get_the_title( ) ."</a></p>";
@@ -28,6 +28,12 @@ This assumes you have Feedburner (the most popular RSS tool)
         }
         add_filter(' the_content' , ' embed_rss' ) ;
         ```
+    5. **Create Thank You** - Go to `Optimize`=>`BrowserFriendly`=>`Content Options` and "Enable" the personal message
+    6. **Time Your RSS Emails** - Go to `Publicize`=>`Email Subscriptions`=>`Delivery Options`
+    7. **Redirect Wordpress RSS to Feedburner** - Install and activate the [tentbloggers plugin](http://wordpress.org/extend/plugins/tentbloggers-feedburner-rss-redirect-plugin/). Then enter your Feedburner URL for "Your Feedburner Address" and "Comment Feeds" fields.
+
+# Video Sitemaps
+
 
 # Common Mistakes
 * Content behind forms or paywalls

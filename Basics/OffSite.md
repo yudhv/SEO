@@ -32,3 +32,17 @@ Build as vast and varied a link profile as possible, as it brings the best SE re
 ### 3. Self-Created, Non-Editorial (Lowest value, borderline spam)
 * Creating links on websites that offer linking services through guest book signings, forum signs, blog comments, user profiles, etc
 * Aggressive pursuant of this strategy get penalizes by SEs
+
+1. Bookmarking 6 
+2. Profiles 5
+3. Image Sharing
+4. Blog Comments, Classified Ads 1. 
+5. Blog posting (<500 words 2 links)
+6. Article Submission (>500 words 3 links)
+7. Portfolios
+8. Business Listing 2. 
+9. Web 2.o 3. 
+10. Directory Submission
+11. Forums 4. 
+12. Quora
+13. 
